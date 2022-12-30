@@ -121,6 +121,10 @@
   }
 }
 
+/***************************************/
+/*              BELOW 428px           */
+/***************************************/
+
 @media (max-width: 26.8em) {
   .brand:link,
   .brand:visited {
@@ -162,6 +166,7 @@
   .path-link:link,
   .path-link:visited {
     font-size: 1.4rem;
+    text-align: center;
   }
 
   .form-contact {
@@ -200,10 +205,15 @@
   }
 }
 
+/***************************************/
+/*              BELOW 375px           */
+/***************************************/
+
 @media (max-width: 23.48em) {
   .path-link:link,
   .path-link:visited {
     font-size: 1.2rem;
+    text-align: center;
   }
 
   .lang-name {
@@ -240,6 +250,10 @@
     grid-template-columns: 1fr;
   }
 }
+
+/***************************************/
+/*              BELOW 325px           */
+/***************************************/
 
 @media (max-width: 20em) {
   .path-link:link,
