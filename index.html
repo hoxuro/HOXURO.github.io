@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heri Amezcua | Web Development</title>
+    <link rel="icon" href="resources/logo.png" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/landing.css" />
+    <link rel="stylesheet" href="css/landing-queries.css" />
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="#"
+        ><img class="brand-logo" src="resources/logo.png" alt="snake logo" />
+        Heri Amezcua</a
+      >
+      <nav class="main-nav esconder">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">Proyectos</a></li>
+          <li><a class="main-nav-link" href="#">Contacto</a></li>
+          <li><a class="main-nav-link" href="#">Sobre mi</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">¿Quién es Heri Amezcua?</h1>
+            <p class="hero-text">
+              Cuando tenía 11 años, escribí mis primeras lineas de código en
+              Python. con la ilusión de crear mi propio videojuego de Pokémon.
+              Nueve años más tarde, mi vida gira en torno al desarrollo de
+              software.
+            </p>
+          </div>
+          <div class="hero-img-box">
+            <img
+              class="hero-img"
+              src="resources/hero-img.jpg"
+              alt="heri amezcua"
+              width="90%"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section-exp">
+        <div class="container">
+          <p
+            class="heading-exp text-italic text-center text-bold margin-bottom-md"
+          >
+            "Una nota no te define. La abilidad para resolver problemas de
+            manera efectiva y eficiente si."
+          </p>
+          <div class="cont-exp">
+            <ul class="lang-list">
+              <li>
+                <p class="lang-name text-bold">HTML</p>
+                <div class="progress-empty">
+                  <div class="progress-html"></div>
+                </div>
+              </li>
+              <li>
+                <p class="lang-name text-bold">CSS</p>
+                <div class="progress-empty">
+                  <div class="progress-css"></div>
+                </div>
+              </li>
+              <li>
+                <p class="lang-name text-bold">JS</p>
+                <div class="progress-empty">
+                  <div class="progress-js"></div>
+                </div>
+              </li>
+            </ul>
+            <div class="exp-text-box">
+              <h2 class="heading-secondary text-center">Mi Aprendizaje</h2>
+              <p class="text-exp text-center">
+                Yo mismo he experimentado los puntos donde
+                <span class="text-bold-2"
+                  >el actual sistema educativo falla</span
+                >, por eso he optado por combinarlo con un
+                <span class="text-bold-2">aprendizaje autodidacta</span>.
+              </p>
+              <a class="path-link" href="#"
+                >Ver recorrido académico y profesional</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-contact">
+        <div class="container">
+          <h2 class="heading-secondary text-center margin-bottom-md">
+            Contacto
+          </h2>
+          <form class="form-contact">
+            <div class="form-first-line margin-bottom-sm">
+              <div class="form-name">
+                <label for="fname">Nombre:*</label>
+                <input class="input-text" type="text" />
+              </div>
+              <div class="form-name">
+                <label for="affair">Asunto:*</label>
+                <input class="input-text" type="text" />
+              </div>
+            </div>
+            <div class="form-second-line margin-bottom-sm">
+              <label for="email">Email:*</label>
+              <input class="input-email" type="email" />
+            </div>
+            <div class="form-message margin-bottom-sm">
+              <label for="message">Mensaje:*</label>
+              <textarea class="input-message" name="message"></textarea>
+            </div>
+            <input type="submit" class="submit" value="Enviar" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <div class="line-yellow"></div>
+  </body>
+</html>
