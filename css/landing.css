@@ -139,6 +139,7 @@
 .form-first-line {
   display: flex;
   justify-content: space-between;
+  row-gap: 1.6rem;
 }
 
 .form-name {
