@@ -1,0 +1,149 @@
+.projects-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5.2rem;
+}
+
+.projects-nav-list li {
+  width: 50rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.project-link:link,
+.project-link:visited {
+  text-decoration: none;
+  font-size: 3rem;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.project-link:hover,
+.project-link:active {
+  text-decoration: none;
+  font-size: 3rem;
+  color: #333;
+  text-transform: uppercase;
+}
+
+/***************************************/
+/*             QUERIES                 */
+/***************************************/
+
+/***************************************/
+/*              BELOW 1000px           */
+/***************************************/
+
+@media (max-width: 62.5em) {
+  .project-link:link,
+  .project-link:visited {
+    font-size: 2.4rem;
+  }
+}
+
+/***************************************/
+/*              BELOW 658px           */
+/***************************************/
+
+@media (max-width: 41.125em) {
+  .projects-nav-list li {
+    width: 40rem;
+  }
+
+  .project-link:link,
+  .project-link:visited {
+    font-size: 2.4rem;
+  }
+
+  .project-img {
+    width: 9.6rem;
+    height: 9.6rem;
+  }
+}
+
+/***************************************/
+/*              BELOW 428px           */
+/***************************************/
+
+@media (max-width: 26.8em) {
+  .projects-nav-list li {
+    width: 35rem;
+  }
+
+  .project-link:link,
+  .project-link:visited {
+    font-size: 2rem;
+  }
+}
+
+/***************************************/
+/*              BELOW 375px           */
+/***************************************/
+
+@media (max-width: 23.48em) {
+  .projects-nav-list li {
+    width: 30rem;
+  }
+}
+
+/***************************************/
+/*              BELOW 325px           */
+/***************************************/
+
+@media (max-width: 20em) {
+  .projects-nav-list li {
+    width: 25rem;
+  }
+
+  .project-link:link,
+  .project-link:visited {
+    font-size: 1.6rem;
+  }
+}
+
+/***************************************/
+/*              BELOW 844px           */
+/***************************************/
+
+@media (max-width: 52.75em) {
+  .brand:link,
+  .brand:visited {
+    font-size: 2.4rem;
+  }
+}
+
+/***************************************/
+/*              BELOW 428px           */
+/***************************************/
+
+@media (max-width: 26.8em) {
+  .icon-mobile-nav {
+    height: 3.6rem;
+    width: 3.6rem;
+    color: #333;
+  }
+
+  .brand:link,
+  .brand:visited {
+    font-size: 2rem;
+  }
+
+  .brand-logo {
+    height: 4.4rem;
+  }
+}
+
+/***************************************/
+/*              BELOW 375px           */
+/***************************************/
+
+@media (max-width: 23.48em) {
+  .icon-mobile-nav {
+    height: 3.6rem;
+    width: 3.6rem;
+    color: #333;
+  }
+}

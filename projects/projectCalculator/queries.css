@@ -1,0 +1,13 @@
+@media (max-width: 35em) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  header {
+    column-gap: 2.4rem;
+  }
+
+  .calculator {
+    margin: 0 3.2rem;
+  }
+}

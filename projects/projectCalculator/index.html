@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>Simple Calculator</h1>
+      <div class="icons-box">
+        <ion-icon class="icon icon--light" name="sunny-outline"></ion-icon>
+        <ion-icon class="icon icon--dark hidden" name="moon-outline"></ion-icon>
+      </div>
+    </header>
+    <main>
+      <div class="calculator">
+        <div class="screen">
+          <p class="nbsp hidden">&nbsp;</p>
+          <p class="screen-text up">&nbsp;</p>
+          <p class="screen-text down">0</p>
+        </div>
+        <div class="keyboard">
+          <ul class="btns-list">
+            <li><button class="btn btn--divide">/</button></li>
+            <li><button class="btn btn--clear">C</button></li>
+            <li>
+              <button class="btn btn--back">
+                <ion-icon
+                  class="icon--operation"
+                  name="backspace-outline"
+                ></ion-icon>
+              </button>
+            </li>
+            <li>
+              <button class="btn btn--plus">+</button>
+            </li>
+            <li>
+              <button class="btn btn--less">
+                <ion-icon
+                  class="icon--operation"
+                  name="remove-outline"
+                ></ion-icon>
+              </button>
+            </li>
+            <li>
+              <button class="btn btn--multiply">
+                <ion-icon
+                  class="icon--operation"
+                  name="close-outline"
+                ></ion-icon>
+              </button>
+            </li>
+            <li><button class="btn btn--7">7</button></li>
+            <li><button class="btn btn--8">8</button></li>
+            <li><button class="btn btn--9">9</button></li>
+            <li><button class="btn btn--4">4</button></li>
+            <li><button class="btn btn--5">5</button></li>
+            <li><button class="btn btn--6">6</button></li>
+            <li><button class="btn btn--1">1</button></li>
+            <li><button class="btn btn--2">2</button></li>
+            <li><button class="btn btn--3">3</button></li>
+            <li><button class="btn btn--current">CE</button></li>
+            <li><button class="btn btn--0">0</button></li>
+            <li>
+              <button class="btn btn--equal">
+                <ion-icon
+                  class="icon--operation"
+                  name="reorder-two-outline"
+                ></ion-icon>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <h1></h1>
+  </body>
+  <script src="script.js"></script>
+</html>
