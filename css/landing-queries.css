@@ -119,6 +119,93 @@
   .form-contact label {
     font-size: 2rem;
   }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: #fab005;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    transform: translateX(100%);
+
+    /* HIDE NAVIGATION VISUALLY */
+    opacity: 0;
+
+    /* MAKE IT UNACCESIBLE TO KEYBOARD */
+    pointer-events: none;
+
+    /* HIDE IT FROM SCREEN READERS */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+}
+
+/***************************************/
+/*              BELOW 658px           */
+/***************************************/
+
+@media (max-width: 41.125em) {
+  .hero {
+    grid-template-columns: 1fr;
+    row-gap: 1.6rem;
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+  }
+
+  .cont-exp {
+    grid-template-columns: 1fr;
+  }
+
+  .lang-list {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .form-contact {
+    max-width: 50rem;
+  }
 }
 
 /***************************************/
@@ -126,6 +213,12 @@
 /***************************************/
 
 @media (max-width: 26.8em) {
+  .icon-mobile-nav {
+    height: 3.6rem;
+    width: 3.6rem;
+    color: #333;
+  }
+
   .brand:link,
   .brand:visited {
     font-size: 2rem;
@@ -163,10 +256,13 @@
     grid-template-columns: 1fr;
   }
 
+  .text-exp{
+    font-size: 1.6rem;
+  }
+
   .path-link:link,
   .path-link:visited {
     font-size: 1.4rem;
-    text-align: center;
   }
 
   .form-contact {
@@ -210,10 +306,15 @@
 /***************************************/
 
 @media (max-width: 23.48em) {
+  .icon-mobile-nav {
+    height: 3.6rem;
+    width: 3.6rem;
+    color: #333;
+  }
+
   .path-link:link,
   .path-link:visited {
     font-size: 1.2rem;
-    text-align: center;
   }
 
   .lang-name {
@@ -224,15 +325,9 @@
     font-size: 1.6rem;
   }
 
-  .progress-empty {
-    height: 1.2rem;
-  }
-
-  .progress-bar,
-  .progress-html,
-  .progress-js,
-  .progress-css {
-    height: 1.2rem;
+  .lang-list {
+    width: 80%;
+    margin: 0 auto;
   }
 
   .input-text {
@@ -259,7 +354,6 @@
   .path-link:link,
   .path-link:visited {
     font-size: 1.4rem;
-    text-align: center;
   }
 
   .heading-exp {

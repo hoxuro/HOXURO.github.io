@@ -59,6 +59,7 @@
 html {
   /* font-size: 10px; */
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -66,6 +67,9 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+
+  /*ONLY WORKS IF THERE IS NOTHING ABSOLUTELY POSITIONED IN RELATION TO BODY*/
+  overflow-x: hidden;
 }
 
 .container {
@@ -120,6 +124,8 @@ header {
   font-weight: 600;
   padding: 0.8rem 4.8rem;
   background-color: #fab005;
+
+  position: relative;
 }
 
 .brand:link,
@@ -161,5 +167,27 @@ header {
 }
 
 .esconder {
+  display: none;
+}
+
+/*******************************/
+/*          MOBILE             */
+/*******************************/
+
+.btn-mobile-nav {
+  border: none;
+  cursor: pointer;
+  background: none;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
   display: none;
 }
