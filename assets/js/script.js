@@ -1,9 +1,17 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", function () {
+  // sticky navigation
+  window.addEventListener("scroll", function () {
+    const headerEl = document.querySelector("header");
+    headerEl.classList.toggle(
+      "sticky",
+      window.scrollY >
+        window.pageYOffset + secIntroEl.getBoundingClientRect().top
+    );
+  });
+
   // Making mobile navigation work
-  const menuOpenEl = document.querySelector(".menu-open");
-  const menuClosedEl = document.querySelector(".menu-closed");
   const htmlEl = document.querySelector("html");
 
   const btnNavEl = document.querySelector(".btn-mobile-nav");
@@ -73,6 +81,8 @@ document.addEventListener("DOMContentLoaded", function () {
             0,
             window.pageYOffset + secIntroEl.getBoundingClientRect().top
           );
+          headerEl.classList.toggle("nav-open");
+          htmlEl.classList.toggle("disable-scroll");
           break;
         case "services":
           window.scroll(
