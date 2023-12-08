@@ -198,7 +198,7 @@ header {
 /* INITIAL VALUES */
 
 .btn-mobile-nav {
-  /* position: fixed; */
+  position: relative;
   background: none;
   border: none;
   cursor: pointer;
@@ -1524,6 +1524,7 @@ footer .social-icon {
 
   .btn-mobile-nav {
     display: block;
+    flex: 0 1 15%;
   }
 
   header {
@@ -1596,6 +1597,7 @@ footer .social-icon {
 
 .section-about,
 .section-services,
-.section-contact {
+.section-contact,
+footer {
   display: none;
 }
