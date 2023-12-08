@@ -1595,6 +1595,7 @@ footer .social-icon {
 }
 
 .section-about,
-.section-services {
+.section-services,
+.section-contact {
   display: none;
 }
