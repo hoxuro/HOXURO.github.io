@@ -1518,6 +1518,9 @@ footer .social-icon {
 
 @media screen and (max-width: 800px) {
   /* MOBILE NAVIGATION QUERIES */
+  .disable-scroll {
+    overflow: hidden;
+  }
 
   .btn-mobile-nav {
     display: block;
