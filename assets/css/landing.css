@@ -69,7 +69,7 @@ button {
 
 /* HEADINGS */
 .main-title {
-  font-size: 5.2rem;
+  font-size: clamp(3.6rem, 3.274rem + 1.605vw, 5.2rem);
   line-height: 1.2;
   font-family: var(--font-secondary);
   font-weight: 700;
@@ -159,10 +159,10 @@ header {
   flex: 0 1 10%;
   font-weight: 700;
   font-family: var(--font-secondary);
-  font-size: 2.6rem;
+  font-size: clamp(2.2rem, 2.1185rem + 0.4013vw, 2.6rem);
   letter-spacing: 0.05rem;
   color: #fff;
-  padding: 2rem 5rem 2rem 1rem;
+  padding: 1rem 5rem 1rem 1rem;
 
   display: flex;
   flex-flow: row nowrap;
@@ -183,6 +183,7 @@ header {
 .phone-box {
   flex: 0 1 45%;
   justify-self: flex-end;
+  padding-right: 1rem;
 
   display: flex;
   align-items: center;
@@ -261,6 +262,7 @@ header {
   max-width: 70%;
   height: 100%;
   margin: 0 auto;
+  padding: 0 4rem;
 
   display: flex;
   flex-flow: column nowrap;
@@ -1528,6 +1530,12 @@ footer .social-icon {
 *         LANDING QUERIES        *
 *********************************/
 
+@media screen and (max-width: 930px) {
+  header .phone-box {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 800px) {
   /* MOBILE NAVIGATION QUERIES */
   .disable-scroll {
@@ -1579,10 +1587,6 @@ footer .social-icon {
     display: block;
   }
 
-  header .phone-box {
-    display: none;
-  }
-
   .main-nav .logo-link {
     z-index: 999;
     margin: 0 0 var(--space-bg) 0;
@@ -1606,6 +1610,16 @@ footer .social-icon {
   }
 }
 
-.section-about {
-  display: none;
+@media screen and (max-width: 320px) {
+  .main-title {
+    margin-bottom: 15rem;
+  }
+
+  .section-hero .philosophy-box {
+    width: 20rem;
+  }
+
+  .section-hero .philosophy {
+    line-height: 1.3;
+  }
 }

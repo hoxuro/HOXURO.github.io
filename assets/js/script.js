@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const headerEl = document.querySelector("header");
     headerEl.classList.toggle(
       "sticky",
-      window.scrollY >
+      window.scrollY >=
         window.pageYOffset + secIntroEl.getBoundingClientRect().top
     );
   });
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
         case "vision":
           window.scroll(
             0,
-            window.pageYOffset + secIntroEl.getBoundingClientRect().top
+            window.scrollY + secIntroEl.getBoundingClientRect().top
           );
           headerEl.classList.toggle("nav-open");
           htmlEl.classList.toggle("disable-scroll");
@@ -87,32 +87,42 @@ document.addEventListener("DOMContentLoaded", function () {
         case "services":
           window.scroll(
             0,
-            window.pageYOffset + secSerEl.getBoundingClientRect().top
+            window.scrollY + secSerEl.getBoundingClientRect().top
           );
+          headerEl.classList.toggle("nav-open");
+          htmlEl.classList.toggle("disable-scroll");
           break;
         case "projects":
           window.scroll(
             0,
-            window.pageYOffset + secProEl.getBoundingClientRect().top
+            window.scrollY + secProEl.getBoundingClientRect().top
           );
+          headerEl.classList.toggle("nav-open");
+          htmlEl.classList.toggle("disable-scroll");
           break;
         case "testimonials":
           window.scroll(
             0,
-            window.pageYOffset + secTesEl.getBoundingClientRect().top
+            window.scrollY + secTesEl.getBoundingClientRect().top
           );
+          headerEl.classList.toggle("nav-open");
+          htmlEl.classList.toggle("disable-scroll");
           break;
         case "about":
           window.scroll(
             0,
-            window.pageYOffset + secAboutEl.getBoundingClientRect().top
+            window.scrollY + secAboutEl.getBoundingClientRect().top
           );
+          headerEl.classList.toggle("nav-open");
+          htmlEl.classList.toggle("disable-scroll");
           break;
         case "contact":
           window.scroll(
             0,
-            window.pageYOffset + secContactEl.getBoundingClientRect().top
+            window.scrollY + secContactEl.getBoundingClientRect().top
           );
+          headerEl.classList.toggle("nav-open");
+          htmlEl.classList.toggle("disable-scroll");
           break;
       }
     });
