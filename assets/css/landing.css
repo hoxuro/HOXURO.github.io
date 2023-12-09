@@ -1543,6 +1543,7 @@ footer .social-icon {
 
 @media screen and (max-width: 1440px) {
   /* GENERAL */
+  .section-hero .container,
   .introduction,
   .services,
   .projects,
@@ -1558,6 +1559,7 @@ footer .social-icon {
 
 @media screen and (max-width: 1080px) {
   /* GENERAL */
+  .section-hero .container,
   .introduction,
   .services,
   .projects,
