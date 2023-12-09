@@ -1874,6 +1874,7 @@ footer .social-icon {
   .section-services .heading-primary,
   .section-testimonials .heading-primary,
   .section-about .heading-primary,
+  .section-projects .heading-primary,
   .section-contact .heading-primary {
     margin-bottom: var(--space-md);
   }
@@ -1958,7 +1959,7 @@ footer .social-icon {
 
   /* FOOTER */
   footer .copy-box {
-    max-width: 70%;
+    max-width: 90%;
   }
 }
 
@@ -1994,10 +1995,5 @@ footer .social-icon {
 
   .info-box .info-text {
     max-width: 80%;
-  }
-
-  /* FOOTER */
-  footer .copy-box {
-    max-width: 90%;
   }
 }
